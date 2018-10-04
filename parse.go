@@ -11,7 +11,7 @@ type link struct {
 	Href string
 	Text string
 }
-
+//Parse parses the links
 func Parse(r io.Reader) ([]link, error) {
 	doc, err := html.Parse(r)
 	if err != nil {
